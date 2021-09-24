@@ -27,7 +27,6 @@ class AlgoruthmManager: AlgorithmProtocol {
     }
 
     private func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
-        return [0, 1]
         for i in 0..<nums.count-1 {
             for j in i+1..<nums.count {
                 let sum = nums[i] + nums[j]
