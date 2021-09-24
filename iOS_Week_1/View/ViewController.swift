@@ -23,14 +23,21 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func basicsTest(_ sender: Any) {
-        // please provide a couple of sample functionality for class, struct and enum use cases by creating your own modules. We provide you some sample class, enum and struct please provide your own.
-        // The code below is just sample
-        let structObj = SampleStruct(title: "Week 1 Assignment", subTitle: "subTitle")
-        let classObj = SampleClass(name: "mehmet ali", surName: "akbay").setTitleObject(by: structObj)
-        classObj.display()
+    @IBAction func calculateTemperature(_ sender: Any) {
+        
+     let currentTemperature = Temperature(celsius: 24)
+        print("current fahrenheit = \(currentTemperature.fahrenheit)")
+        print("current kelvin = \(currentTemperature.kelvin)")
+      
     }
 
-    
+    @IBAction func calculateAreaOfShapes(_ sender: Any) {
+        
+        let triangle = Triangle(height: 1231, width: 5432)
+        print("Area of Triangle \(triangle.area())")
+        
+        let rectangle = Rectangle(height: 1231, width: 5432)
+        print("Area of Rectangle \(rectangle.area())")
+    }
 }
 
